@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="create_table_groups" author="dev" failOnError="true">
+        <sql>
+
+            CREATE TABLE groups(
+            id               SERIAL       NOT NULL PRIMARY KEY,
+            name             VARCHAR(50)     NOT NULL,
+            description      VARCHAR(255)    NOT NULL
+            );
+
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
+
+
